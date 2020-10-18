@@ -5,8 +5,42 @@
 </head>
 <body>
 
+	<!--1. create script to concat a string and a variable
+		2. Using .innerHtml and get ElementById change the innerHTML of the element to what you variable is
+	-->
+	<h1>
+		Please list your first name, last name and full name below.<br>
+		<span id="firstName">Fritz</span><br>
+		<span id="lastName">Templin</span><br>
+		<span id="fullName">Full Name</span><br>
+	</h1>
 
-	
+
+
+	<script type="text/javascript">
+		
+		var firstName = document.getElementById('firstName');
+		//var	firstName = firstName.innerText;
+		console.log(firstName)
+		var givenName = firstName.innerText
+
+		var lastName = document.getElementById('lastName');
+		//var	firstName = firstName.innerText;
+		console.log(lastName)
+		var familyName = lastName.innerText
+
+		var wholeName = givenName + familyName + " is your full name."
+		var fullName = document.getElementById('fullName');
+
+			fullName.innerText = wholeName
+
+
+
+	</script>
+
+
+
+
 
 </body>
 </html>
