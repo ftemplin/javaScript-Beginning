@@ -6,7 +6,7 @@
 <body>
 
 
-<h1 id="">
+<h1 id="welcome"></h1>
 
 
 <script type="text/javascript">
@@ -15,9 +15,10 @@
  
 
 	var name = prompt("What is your name?");
+	var welcomeNode = document.getElementById('welcome')
 
-	if(name == "Fritz") {
-		alert("Name is equal to Fritz");
+	if(name.toLowerCase() == "fritz templin") {
+		welcomeNode.innerText = "Welcome " + name + " to your website."
 	}
 
 
