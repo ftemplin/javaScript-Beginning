@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Your First Script</title>
+	<title>Mini Project 2</title>
 </head>
 <body>
-
-
-
-<!--the javascript in the file goes just befor the closing body tag-->
+	<h1 id="status"></h1>
 
 	<script type="text/javascript">
-		alert("Hi my name is Fritz");
+		
+		var statusNode = document.getElementById('status');
+		var inputUrl = prompt("Please enter your website URL.");
+
+		if (inputUrl.substr(0, 7)== "http://") {
+			//statusNode.innerText = "It matches"
+		}
+		else{
+			//statusNode.innerText = "It does not match"
+			inputUrl = "http://" + inputUrl
+		}
+
+		statusNode.innerText = "Your URL is " + inputUrl
+
 	</script>
+
 </body>
 </html>
