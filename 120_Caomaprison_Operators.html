@@ -13,16 +13,19 @@
 	
 	
  
-
+	//Creating a variable and intaking the value from a prompt for the user name
 	var name = prompt("What is your name?");
+	// Creating a variable and setting the value as id element
 	var welcomeNode = document.getElementById('welcome')
-
+	//Creating a variable and intaking the value from a prompt for the users course
 	var inputCourse = prompt("What course are you taking?")
-
+	// Creating the comparison if statment and setting all of the input to lowercase
 	if (inputCourse.toLowerCase()== "javascript") {
+		//creating the response in the id element "Welcome" if the comparison is True
 		welcomeNode.innerText ="Welcome " + name + ", this is the javascript course."
 
 	}else{
+		//Creating the response in the "Welcome" Element if the comaprison is false
 		welcomeNode.innerText = "Sorry "+name+ "," + " you are in the wrong course, this is the javascript course."
 	}
 
