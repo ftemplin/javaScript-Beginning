@@ -18,6 +18,30 @@
 	var name = prompt("Enter your first name.");
 	var welcomeNode = document.getElementById("welcome");
 
+	switch(name){
+		case "Fritz":
+			welcomeNode.innerText = name + " Is the Dad."
+			break;
+		case "Lois":
+			welcomeNode.innerText = name + " Is the Mom."
+			break;
+		case "Ragnar":
+			welcomeNode.innerText = name + " Is the Dog."
+			break;
+		case "Braden":
+			welcomeNode.innerText = name + " Is the Son."
+			break;
+		default:
+			welcomeNode.innerText = name + " Is not part of the family."
+			break;
+	}
+
+
+
+
+
+	//--------- Using Else IF-----------------------
+/*
 	if(name == "Fritz") {
 		welcomeNode.innerText = name + " Is the Dad."
 	} 	else if (name == "Ragnar"){
@@ -29,7 +53,7 @@
 	}	else {
 		welcomeNode.innerText = name + " Is not part of the family."
 	}
-
+*/
 
 </script>
 </body>
