@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>150_handling_Special_Cases</title>
+</head>
+<body>
+
+<h1 id="title"></h1>
+
+<p>
+	<span id="welcome"></span>
+</p>
+
+
+<script type="text/javascript">
+	
+
+	var name = prompt("Enter your first name.");
+	var welcomeNode = document.getElementById("welcome");
+
+	if(name == "Fritz") {
+		welcomeNode.innerText = name + " Is the Dad."
+	} 	else if (name == "Ragnar"){
+		welcomeNode.innerText = name + " Is the Dog."
+	}	else if (name == "Lois"){
+		welcomeNode.innerText = name + " Is the Mom."
+	}	else if (name == "Braden"){
+		welcomeNode.innerText = name + " Is the Son."
+	}	else {
+		welcomeNode.innerText = name + " Is not part of the family."
+	}
+
+
+</script>
+</body>
+</html>
