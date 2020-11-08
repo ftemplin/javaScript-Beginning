@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login validation /account creation</title>
+</head>
+<body>
+	<form name="loginForm" onSubmit="return validateForm();" action="LoginPage.html" method="post">
+		<div>
+			<label>First Name</label>
+			<input type="text" placeholder="firstName" name="fname">
+			<label>Last Name</label>
+			<input type="text" placeholder="lastName" name="lname">
+		</div>
+		<div>
+			<label>User Name</label>
+			<input type="text" placeholder="userName" name="uname">
+			<label>Password</label>
+			<input type="password" placeholder="password" name="pswd">
+		</div>
+		<input type="submit" value="Login"/>
+	</form>
+
+	<script type="text/javascript">
+		function validateForm() {
+			var un = document.loginform.uname.value;
+			var pw = document.loginform.pswd.value;
+			var userName = "Fritz";
+			var password = "1234";
+			if ((un == userName) && (pw == password)){
+				return true;
+				alert (un + "you are logged in")
+			}else{
+				alert ("User name or password is not correct")
+				return false;
+			}
+
+		}	</script>
+
+</body>
+</html>
