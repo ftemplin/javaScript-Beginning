@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini Project 3</title>
+</head>
+<body>
+	<div id="header">
+		<h1 id="pageTitle">Mini Project 3</h1>
+		<p id="instructions">
+			<ol>
+				<li>Ask the user for a number</li>
+				<li>Cast the input to a numbe</li>
+				<li>Make sure the number is valid</li>
+				<li>If the number is over 18, change some text on the page</li>
+			</ol>
+		</p>
+		<p id ="respondToUser"></p>
+	</div>
+
+
+	<script type="text/javascript">
+		var age = prompt("What is your age")
+		age = Number(age)
+		var respondToUserNode = document.getElementById('respondToUser')
+		if(age)
+		{
+			if(age > 18)
+			{
+				respondToUserNode.innerText = "You are old enough"
+			}else{
+				respondToUserNode.innerText = "You are not old enough"
+			}
+		}else{
+			respondToUserNode.innerText = "You did not enter a valid age"
+		}
+		
+	</script>
+</body>
+</html>
