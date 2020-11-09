@@ -4,9 +4,10 @@
 	<title>Mini Project 3</title>
 </head>
 <body>
-	<div id="header">
-		<h1 id="pageTitle">Mini Project 3</h1>
-		<p id="instructions">
+	<div id="hdr">
+		<h1 id="pgTtl">Mini Project 3</h1>
+		<p id="instrctns">
+			<h2 id="rqHdr">Here are the requirements</h2>
 			<ol>
 				<li>Ask the user for a number</li>
 				<li>Cast the input to a numbe</li>
@@ -14,24 +15,37 @@
 				<li>If the number is over 18, change some text on the page</li>
 			</ol>
 		</p>
-		<p id ="respondToUser"></p>
+	</div>
+	<div id="inPt">
+		<form>	
+			<h3 class="InPut">Enter your name</h3>
+			<input type="text" id="nameField">
+			<h3 class="InPut">Enter your age</h3>
+			<input type="text" id="age"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<div id="otPt">
+		<p id ="rspndToUsr"></p>
 	</div>
 
 
 	<script type="text/javascript">
-		var age = prompt("What is your age")
+		var name = document.getElementById("nameField").value;
+		var age = document.querySelector(".age")
+		//var age = prompt("What is your age")
 		age = Number(age)
-		var respondToUserNode = document.getElementById('respondToUser')
+		var rspndToUsrNode = document.getElementById('rspndToUsr')
 		if(age)
 		{
-			if(age > 18)
+			if(age >= 18)
 			{
-				respondToUserNode.innerText = "You are old enough"
+				rspndToUsrNode.innerText = "You are old enough"
 			}else{
-				respondToUserNode.innerText = "You are not old enough"
+				rspndToUsrNode.innerText = "You are not old enough"
 			}
 		}else{
-			respondToUserNode.innerText = "You did not enter a valid age"
+			rspndToUsrNode.innerText = "You did not enter a valid age"
 		}
 		
 	</script>
