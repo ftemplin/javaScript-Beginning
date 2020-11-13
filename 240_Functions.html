@@ -15,13 +15,46 @@
 			console.log("greeting-->Hello World")
 		}
 
-
+		// functions can take an argument 
 		function personalGreeting(name) {
-			console.log("personalGreeting--->Hello World" + name)
+			console.log("personalGreeting--->Hello " + name)
 
 		}
 
-		greeting("Fritz")
+		// functions can take multiple arguments 
+		function greetAndAge(name, age) {
+			console.log("GreetAndAge--->Hello " + name)
+			console.log("GreetAndAge--->you are " + age)
+		}
+
+		// functions and default values 
+		function greetDefault(name="unknown", age="unknown") {
+			console.log("GreetDefault--->Hello " + name)
+			console.log("GreetDefault--->you are " + age)
+		}
+
+		// functions and return of value 
+		function greetReturn(name="unknown", age="unknown") {
+			console.log("GreetDefault--->Hello " + name)
+			console.log("GreetDefault--->you are " + age)
+
+			return age * age
+			// nothing after a return ina function will be run
+		}
+			var varAge = greetReturn()
+
+		//Call function with no argument
+		greeting()
+		// call the funtion with the name argumnet
+		personalGreeting("Fritz")
+		// call the funtion with multiple argumnets
+		greetAndAge("Fritz", 51)
+		// Call the function with default settings if the argument is empty it will use the default if arguments are given it will use those
+		greetDefault("Frank", 65)
+
+		// Call greetReturn and then look at the variable value for age
+		greetReturn("John",4)
+
 	</script>
 
 </body>
