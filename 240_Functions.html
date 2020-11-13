@@ -35,13 +35,13 @@
 
 		// functions and return of value 
 		function greetReturn(name="unknown", age="unknown") {
-			console.log("GreetReturn--->Hello " + name)
-			console.log("GreetReturn--->you are " + age)
+			console.log("GreetReturn--->Hello " + name);
+			console.log("GreetReturn--->you are " + age);
 
-			return age * age
+			return age * age;
 			// nothing after a return ina function will be run
 		}
-			var varAge = greetReturn()
+			//var varAge = greetReturn()
 
 		//Call function with no argument
 		greeting()
@@ -53,6 +53,7 @@
 		greetDefault("Frank", 65)
 		// Call greetReturn and then look at the variable value for age
 		greetReturn("John",4)
+		var varAge = greetReturn("John", 4)
 
 	</script>
 
