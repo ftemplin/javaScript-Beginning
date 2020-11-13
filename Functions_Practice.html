@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice with Functions</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+			
+		function convPercent(num) {
+			num = Number(num);
+			if (num){
+					// multiply by 100 and add % sign
+					var asPercent = (num*100)+"%";
+					return asPercent;
+					} else {
+						// value is not a number
+						return "not a number"
+						}
+					}
+		var convNumber = convPercent(.2);
+		console.log(convNumber);
+	</script>
+</body>
+</html>
