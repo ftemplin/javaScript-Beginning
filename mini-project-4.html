@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+</head>
+<body>
+	<main>
+	<h1 id="Title">Tip Calculator</h1>
+
+	<form>
+		<h3>Enter the Bill Amount</h3>
+		<input type="" name="billAmount"><span>$</span><br><br>
+
+		<h3>Enter the Tip Amount</h3>
+		<input type="" name="tipAmount"><span>%</span>
+	</form>
+
+
+	</main>
+
+	<script type="text/javascript">
+		
+		function tip(billAmount, tipPercent){
+			tipPercent = tipPercent / 100
+			var tipAmount = billAmount * tipPercent
+			totalAmount = billAmount + tipAmount
+			return totalAmount
+ 
+
+		console.log(totalAmount);
+		console.log(tipAmount);
+	</script>
+
+</body>
+</html>
